@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 图片容器 */
+.red-paper {
+    width: 500px;
+    height: 350px;
+    margin: 150px auto;
+    position: relative;
+}
+.red-paper img {
+    display: block;
+    width: 500px;
+    height: 350px;
+    z-index: 1;
+    filter: blur(15px);  /*/标准浏览器*/
+    -webkit-filter: blur(15px);  /*IE*/
+    -moz-filter: blur(15px); /*火狐*/
+    -ms-filter: blur(15px);  /*//apple*/
+    -o-filter : blur(15px);  /*opear*/
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+/* canvas样式  */
+.red-paper .img-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9;
+}
+/* 按钮容器 */
+.buttons {
+    margin-left: 45%;
+}
+
+.btn {
+    width: 65px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #6f92ef;
+}
